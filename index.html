@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Interactive rating component</title>
+
+    <!-- Imports Bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- imports Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Imports CSS -->
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card-container">
+            <div class="card">
+              <div class="card-body">
+                <div class="star-container">
+                  <img src="images/icon-star.svg" />
+                </div>
+                <!-- form starts here -->
+                <form>
+                  <h1>How did we do?</h1>
+                  <p>
+                    Please let us know how we did with your support request. All
+                    feedback is appreciated to help us improve
+                    our&nbsp;offering!
+                  </p>
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                  </ul>
+                  <div class="btn-container">
+                    <button type="button" class="btn btn-submit">SUBMIT</button>
+                  </div>
+                  <!-- Rating state end -->
+
+                  <!-- Thank you state start -->
+                  <div class="submit-message-active d-none">
+                    <h1>You selected</h1>
+
+                    <!-- Rating section here -->
+
+                    <p>
+                      out of 5 Thank you! We appreciate you taking the time to
+                      give a rating. If you ever need more support, don’t
+                      hesitate to get in touch!
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Emily and Ja</a>.
+    </div>
+
+    <!-- Imports Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
