@@ -1,89 +1,124 @@
 * {
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
-
 
 body {
-    background-color: #131519;
-    color: white;
-    font-size: 15px;
-    font-family: 'Overpass', sans-serif;
+  background-color: #131519;
+  color: white;
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
 }
-
+.active {
+  background-color: #7c8798 !important;
+}
 /* card */
 
 .card-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .card {
-    background-color: #1F2632;
-    width: 425px;
-    border-radius: 20px;
+  background-color: #1f2632;
+  width: 425px;
+  border-radius: 20px;
 }
 
 .star-container {
-    background-color: #232E39;
-    padding: 16px;
-    display: inline-flex;
-    border-radius: 50%;
-    margin-bottom: 15px;
+  background-color: #232e39;
+  padding: 16px;
+  display: inline-flex;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .star-container img {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
-
 .card h1 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .card ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-    margin-bottom: 30px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 30px;
 }
 
 .card ul li {
-    background-color: #242D38;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
+  background-color: #242d38;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card ul li:hover,
+.card ul li:active {
+  background-color: #f9780f;
 }
 
 .btn-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-submit {
-    width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  border-radius: 20px;
 }
 
-.btn-submit, .btn-submit:hover, .btn-submit:active {
-    color: white !important;
-    background-color: #F9780F !important;
-    border: 0;
+.btn-submit {
+  color: white;
+  background-color: #f9780f;
+  border: 0;
 }
-
-
-
+.btn-submit:hover,
+.btn-submit:active {
+  color: #f9780f;
+  background-color: white;
+}
+/* Submit message css */
+.thankyou-img {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.rated-infor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rated-infor p {
+  background: #333b47;
+  text-align: center;
+  color: #f9780f;
+  border-radius: 10px;
+  padding: 5px 12px;
+}
+.submit-message-active h3 {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.rated-message {
+  text-align: center;
+  padding: 0 16px;
+  color: #7c8798;
+}
 /* footer */
 .attribution {
   font-size: 11px;
