@@ -44,11 +44,11 @@
           <div class="card-container">
             <div class="card">
               <div class="card-body">
-                <div class="star-container">
-                  <img src="images/icon-star.svg" />
-                </div>
                 <!-- form starts here -->
                 <form>
+                  <div class="star-container">
+                    <img src="images/icon-star.svg" />
+                  </div>
                   <h1>How did we do?</h1>
                   <p>
                     Please let us know how we did with your support request. All
@@ -70,14 +70,22 @@
 
                 <!-- Thank you state start -->
                 <div class="submit-message-active d-none">
-                  <h1>You selected</h1>
-
+                  <div class="thankyou-img">
+                    <img
+                      src="./images/illustration-thank-you.svg"
+                      alt="Thank you image"
+                    />
+                  </div>
                   <!-- Rating section here -->
-
-                  <p>
-                    out of 5 Thank you! We appreciate you taking the time to
-                    give a rating. If you ever need more support, don’t hesitate
-                    to get in touch!
+                  <div class="rated-infor">
+                    <p>
+                      You selected <span class="selected-num"></span> out of 5
+                    </p>
+                  </div>
+                  <h3>Thank you!</h3>
+                  <p class="rated-message">
+                    We appreciate you taking the time to give a rating. If you
+                    ever need more support, don’t hesitate to get in touch!
                   </p>
                 </div>
               </div>
@@ -102,5 +110,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!-- Link Javascript -->
+    <script src="./app.js"></script>
   </body>
 </html>
